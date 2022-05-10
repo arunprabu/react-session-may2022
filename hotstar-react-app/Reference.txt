@@ -1,0 +1,14 @@
+Components
+---
+  * should return JSX 
+  * should be exported 
+
+  1. Functional Components 
+      1.1 Function comp with Named Function 
+      1.2 Function comp with Anonymous Function 
+      1.3 Function comp with Arrow Function 
+
+  2. Class Components / Containers 
+      class, extends 
+
+-----------
