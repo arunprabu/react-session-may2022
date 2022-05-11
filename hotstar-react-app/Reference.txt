@@ -4,11 +4,44 @@ Components
   * should be exported 
 
   1. Functional Components 
-      1.1 Function comp with Named Function 
-      1.2 Function comp with Anonymous Function 
-      1.3 Function comp with Arrow Function 
+      1.1 Functional comp with Named Function 
+      1.2 Functional comp with Anonymous Function 
+      1.3 Functional comp with Arrow Function [RECOMMENDED]
 
   2. Class Components / Containers 
       class, extends 
 
 -----------
+JSX 
+--
+    * html-like syntax 
+    * mandatory closing of tags 
+    * self-close the tag or separately close the tag 
+    * should not have class attribute in element 
+
+Styles
+---
+  1. External CSS [DONE]
+  2. Internal CSS 
+  3. Inline CSS 
+
+
+Project Structure 
+---
+src/
+  components/
+    shared/
+      Header
+      Footer
+      Menu 
+    Home 
+    About 
+    Contact 
+    ..
+    ...
+    ...
+    ..
+    ...
+    ..
+
+----

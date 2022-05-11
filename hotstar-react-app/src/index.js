@@ -1,5 +1,7 @@
 import React from 'react'; // react core library
 import ReactDOM from 'react-dom'; // rendering the component 
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'; // app-wide css
 import App from './App'; // custom import of App component
 import reportWebVitals from './reportWebVitals'; // for analytics
