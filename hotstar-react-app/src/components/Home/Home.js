@@ -1,6 +1,9 @@
 import React from 'react';
+import ChannelList from '../../containers/ChannelList';
+import Program from './Program/Program';
 
 const Home = () => {
+
   return (
     <div className='container'>
       <div className="px-4 py-5 my-5 text-center">
@@ -25,6 +28,35 @@ const Home = () => {
             </button>
           </div>
         </div>
+      </div>
+      
+      <div>
+        <h2>Featured Programs | Props Demo</h2>
+        <Program 
+          name="Man Vs Wild" 
+          category="Infotainment" 
+          releasedOn="Released Today">   
+          A Wild Adventure show by Bear Grylls
+        </Program>
+
+        <Program 
+          name="Planet Earth II" 
+          category="Infotainment" 
+          releasedOn="Released last week">   
+          A BBC Earth show by David Attenborough
+        </Program>
+
+        <Program 
+          name="IPL 2022" 
+          category="Sports" 
+          releasedOn="Live at 7.30PM">   
+          IPL 2022 Cricket
+        </Program>
+
+        <hr />
+        <h2>Channel List | States, Events Demo</h2>
+        <ChannelList />
+        
       </div>
     </div>
   )

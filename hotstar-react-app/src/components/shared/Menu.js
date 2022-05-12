@@ -2,6 +2,7 @@
 import React from 'react';
 
 const Menu = () => {
+
   return(
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
       <li className="nav-item">

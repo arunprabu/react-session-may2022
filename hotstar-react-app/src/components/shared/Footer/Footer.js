@@ -4,11 +4,14 @@ import Menu from '../Menu';
 import './Footer.css'; 
 
 const Footer = function(){
+
+  let copyrightYear = 2022;
+
   return(
     <div className='text-center'>
       <hr />
       <Menu />
-      <p className='copyrightText'>Copyright 2022 | Arun</p>
+      <p className='copyrightText'>Copyright {copyrightYear} | Arun</p>
     </div>
   )
 }
