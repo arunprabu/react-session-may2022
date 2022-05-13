@@ -65,7 +65,8 @@ class ChannelList extends Component {
 
   // render method is mandatory for a class comp
   render() {
-
+    // never ever change the state here 
+    
     console.log('Inside Render');
     // returning JSX is mandatory
     return (

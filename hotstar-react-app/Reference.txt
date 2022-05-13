@@ -1,3 +1,143 @@
+Node Ecosystem
+--
+  android - Google Play - Marketplace 
+  ----
+    default apps 
+    --
+      calc, calendar, phone book, dialer, camera, google play app 
+
+    third-party apps
+    --
+      instagram, snapchat, whatsapp, bookmyshow,
+
+    client tool: Google Play app 
+    --
+      * search
+      * install 
+      * update
+      * uninstall 
+
+
+------
+  web dev - npmjs.com - Marketplace 
+  ---
+    default packages  
+    ---
+      ..... 
+
+    third-party apps
+    ---
+      react, @angular/core, vue, bootstrap, jquery, 
+
+    client tool: npm 
+      --
+        * install 
+            npm i bootstrap 
+
+        * update
+            npm update bootstrap 
+
+        * uninstall 
+            npm uninstall bootstrap 
+            
+--- 
+Dependencies
+---
+  1. Project Dependencies 
+      * some packages are needed for the app's feature to work 
+
+      examples: @angular/core, react, vue, jquery
+
+      npm i bootstrap (or )
+      npm i bootstrap --save (or)
+      npm i bootstrap -S  
+
+  2. Dev Dependencies 
+      * some packages are needed for the project to be developed 
+      examples: webpack, typescript, nodemon, babel   
+      
+      npm i typescript --save-dev  (or)
+      npm i typescript -D 
+
+
+  3. Global Dependencies 
+      * will be installed system-wide 
+
+      npm i @angular/cli -g 
+      ng new pjt-name
+
+----
+
+TODO: npm prune 
+TODO: Where will the global dependencies be stored in windows? 
+
+
+----------
+
+Webapps
+---
+  1. Server Side Rendering Apps (SSR) 
+      * pages will refresh / reload 
+      Arch
+      --
+        1 Server 
+      
+      Codebase:
+      ---
+        Front End (HTML, CSS, JS) + Back End (Java/ PHP) + DB Queries (MySQL)
+      
+      Response: 
+      --
+        HTML, CSS, JS + Data 
+
+      Disadv
+      ---
+        * apps are slower 
+        * high bandwidth consumption 
+        * expensive
+        * bad user experience 
+        * code - mainatenance chaos 
+
+  2. Client Side Rendering Apps (CSR)
+      * pages will not refresh / reload 
+      Arch
+      --
+        2 Servers 
+          1 Front End Server - Single Page App (SPA)
+             Response: HTML, CSS, JS, (wait for data)
+          
+          1 Back End Server - REST API 
+            Response: Data (JSON)
+      
+      Codebase: 
+      --  
+        Front End Codebase: HTML, CSS, JS 
+
+        Back End Codebase: Java/PHP + MySQL 
+
+Single Page App Characteristics (7)
+----
+  1. Page should not refresh 
+  2. URL should change 
+  3. History should be maintained 
+  4. Retain header and footer 
+  5. App should show contextual updates in b/w header and footer 
+  6. Active menu should be set
+  7. Page title should also be updated 
+
+----
+Single Page App Frameworks / Libraries 
+---
+  #1 React JS - Library 
+  #2 VueJS    - Framework 
+  #3 Angular  - Framework 
+
+----
+
+
+
+
+
 Components
 ---
   * should return JSX 
@@ -44,5 +184,18 @@ src/
     ..
     ...
     ..
+
+----
+
+Cross Component Communication
+---
+  1. Parent to Child Comp Communication [DONE]
+      using props 
+  
+  2. Child to Parent Comp Communication [TODO]
+      using props, events with callback fn
+
+  3. Any to Any Comp Communication 
+      using Context API  or else Redux / Flux / MobX 
 
 ----
