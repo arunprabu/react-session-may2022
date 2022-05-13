@@ -1,6 +1,52 @@
 import React, { Component } from 'react'
 
 class TrendingShows extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      showList: [
+        {
+          id: 1, 
+          name: 'Planet Earth', 
+          category: 'Infotainment',
+          releasedOn: 'Last Week',
+          duration: '40 mins',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 
+          isInWatchlist: false
+        },
+        {
+          id: 2, 
+          name: 'Planet Earth II',
+          category: 'Infotainment',
+          releasedOn: 'Today',
+          duration: '60 mins',
+          desc: 'Nam maximus augue ac lacinia feugiat.', 
+          isInWatchlist: false 
+        },
+        {
+          id: 3, 
+          name: 'IPL 2022', 
+          category: 'Sports',
+          releasedOn: 'Today',
+          duration: '4 hours',
+          desc: 'Vivamus vitae blandit justo, eu feugiat quam.', 
+          isInWatchlist: false 
+        },
+        {
+          id: 4, 
+          name: 'Man vs Wild', 
+          category: 'Infotainment',
+          releasedOn: 'Today',
+          duration: '45 mins',
+          desc: ' Suspendisse tincidunt rutrum mattis.', 
+          isInWatchlist: false 
+        }
+      ]
+    }
+  }
+
+
   render() {
     return (
       <div className="row">
@@ -29,7 +75,6 @@ class TrendingShows extends Component {
             </div>
           </div>
         </div>
-
 
         <div className='alert alert-warning'>
           No Trending Shows Found
