@@ -1,6 +1,7 @@
 import React from 'react';
 import ChannelList from '../../containers/ChannelList';
 import TrendingShows from '../../containers/TrendingShows';
+import Subscription from './Subscription';
 import Program from './Program/Program';
 
 const Home = () => {
@@ -62,6 +63,9 @@ const Home = () => {
         <h2>Trending Shows | States, Updating State Immutably, Events, Lists, Keys, Conditional Rendering</h2>
         <TrendingShows />
         
+        <hr/>
+        <h2>Subscription | Styling Demo</h2>
+        <Subscription />
       </div>
     </div>
   )

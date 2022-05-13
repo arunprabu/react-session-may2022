@@ -70,7 +70,7 @@ class TrendingShows extends Component {
         return( 
           <div className="col-md-3" key={show.id}>
             <div className="card" >
-              <img src={show.thumbnail} className="card-img-top" alt="..." />
+              <img src={show.thumbnail} className="card-img-top" alt={show.name} />
               <div className="card-body">
                 <h5 className="card-title">{show.name}</h5>
                 <p className="card-text">{show.desc}</p>
