@@ -203,12 +203,7 @@ Cross Component Communication
 Topics
 ---
   
-  Two Way Binding [DONE]
-  LifeCycle Hooks [DONE]
-  
-  Fragment 
   Strict Mode
-
   ErrorBoundary 
   HOC  
   

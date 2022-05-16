@@ -18,7 +18,7 @@ const Subscription = () => {
   }
 
   return (
-    <div className='text-center'>
+    <> 
       {/* External styling from index.css -- global css */}
       <h3 className="info">You are an active subscriber!</h3>
 
@@ -27,8 +27,8 @@ const Subscription = () => {
       
       {/* Internal Styling  */}
       <p style={ myStyles.paraStyle }>Renew Now to get 50% offer. Apply coupon: OFFER50</p>
-      <button type='button' style={ myStyles.btnStyle }>RENEW NOW!</button>
-    </div>
+      <button type='button' style={ myStyles.btnStyle }>RENEW NOW!</button> 
+    </>
   )
 }
 
