@@ -3,6 +3,8 @@ import ChannelList from '../../containers/ChannelList';
 import TrendingShows from '../../containers/TrendingShows';
 import Subscription from './Subscription';
 import Program from './Program/Program';
+import MyProfile from '../../containers/MyProfile';
+import LifeCycleDemo from '../../containers/LifeCycleDemo';
 
 const Home = () => {
 
@@ -66,6 +68,16 @@ const Home = () => {
         <hr/>
         <h2>Subscription | Styling Demo</h2>
         <Subscription />
+        
+        <hr />
+        <h2>My Profile | Two Way Binding</h2>
+        <MyProfile />
+
+        <hr />
+        <h2>LifeCycle Hooks Demo</h2>
+        <LifeCycleDemo />
+
+
       </div>
     </div>
   )

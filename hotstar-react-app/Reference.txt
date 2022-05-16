@@ -202,16 +202,17 @@ Cross Component Communication
 
 Topics
 ---
-  Styling 
   
-  Two Way Binding 
-  LifeCycle Hooks 
-  HOC 
+  Two Way Binding [DONE]
+  LifeCycle Hooks [DONE]
+  
   Fragment 
-  ErrorBoundary 
   Strict Mode
-  Typechecking With PropTypes
 
+  ErrorBoundary 
+  HOC  
+  
+  Typechecking With PropTypes
   Forms 
     Refs and DOM 
     Uncontrolled Components
