@@ -7,7 +7,9 @@ import App from './App'; // custom import of App component
 import reportWebVitals from './reportWebVitals'; // for analytics
 
 ReactDOM.render(
-  <App />
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
   ,
   document.getElementById('root')
 );

@@ -5,6 +5,7 @@ import Subscription from './Subscription';
 import Program from './Program/Program';
 import MyProfile from '../../containers/MyProfile';
 import LifeCycleDemo from '../../containers/LifeCycleDemo';
+import WithLastLogin from '../../hoc/WithLastLogin';
 
 const Home = () => {
 
@@ -76,6 +77,17 @@ const Home = () => {
         <hr />
         <h2>LifeCycle Hooks Demo</h2>
         <LifeCycleDemo />
+
+        <hr />
+        <h2>Higher Order Components (HOC) - Demo</h2>
+        <WithLastLogin>
+          <p>Last Login: 16/May/2022</p>
+          <p>Updated on: 6PM yesterday</p>
+        </WithLastLogin>
+
+        <WithLastLogin>
+          <p>Do you want to signout?</p>
+        </WithLastLogin>
 
 
       </div>

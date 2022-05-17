@@ -1,19 +1,23 @@
 // Functional comp with Arrow Function
 import React from 'react';
+import MenuItem from './MenuItem';
 
 const Menu = () => {
 
+  const primaryMenus = [
+    { name: 'Home', url: '/'},
+    { name: 'HOC-Demo', url: '/hoc-demo'},
+    { name: 'About', url: '/about'},
+    { name: 'Support', url: '/support'},
+  ]
+
   return(
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
-      <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="#">Home</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">About</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Support</a>
-      </li>
+      {
+        primaryMenus.map( (menu) => {
+          return(<MenuItem url={menu.url} name={menu.name} />)
+        })
+      }
     </ul>
   )
 }

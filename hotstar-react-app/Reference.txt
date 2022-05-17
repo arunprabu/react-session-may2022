@@ -117,13 +117,13 @@ Webapps
 
 Single Page App Characteristics (7)
 ----
-  1. Page should not refresh 
-  2. URL should change 
-  3. History should be maintained 
-  4. Retain header and footer 
-  5. App should show contextual updates in b/w header and footer 
-  6. Active menu should be set
-  7. Page title should also be updated 
+  1. Page should not refresh [DONE]
+  2. URL should change [DONE]
+  3. History should be maintained [DONE]
+  4. Retain header and footer [DONE]
+  5. App should show contextual updates in b/w header and footer [DONE]
+  6. Active menu should be set [DONE]
+  7. Page title should also be updated  [TODO]
 
 ----
 Single Page App Frameworks / Libraries 
@@ -203,15 +203,23 @@ Cross Component Communication
 Topics
 ---
   
-  Strict Mode
+  Page Not Found - 404 [TODO]
+  Routing with React-router-dom v6 
+  HOC 
   ErrorBoundary 
-  HOC  
   
+  React Without ES6
+  React Without JSX
+
   Typechecking With PropTypes
+
   Forms 
     Refs and DOM 
     Uncontrolled Components
   AJAX -- REST API Call
+
+
+ 
 
   Context API 
 
@@ -227,3 +235,49 @@ Topics
 
 
 ---
+
+Routing in React 
+---
+  Step 0: 
+    Identify the URLs
+    localhost:3000/             -- Home Menu
+    localhost:3000/hoc-demo     -- HOC Demo Menu 
+    localhost:3000/about        -- About Menu
+    localhost:3000/support      -- Support Menu
+
+  Step 1:
+    Let's setup the about URL's properly in Menu.js 
+
+  Step 2: 
+    Let's create the components for all urls
+      Home.js     -- Home Menu 
+      HocDemo.js  -- Hoc Demo Menu 
+      About.js    -- About Menu
+      Support.js  -- Support Menu
+
+  Step 3: 
+    Now, it is time to setup routing using react-router-dom 
+    npm i react-router-dom
+
+  Step 4: 
+    Follow the react-router-dom tutorial and implement routing 
+    Put the whole app under <BrowserRouter> -- Refer App.js 
+
+  Step 5: 
+    Config the URL's in App.js
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/hoc-demo" element={<HocDemo/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/support" element={<Support/>} />
+    </Routes>
+
+  Step 6:
+    Replace a href with <NavLink to='/'>
+
+  Step 7: 
+    It's over. 
+
+
+
+

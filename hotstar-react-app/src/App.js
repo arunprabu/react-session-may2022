@@ -10,21 +10,31 @@ import Header from './components/shared/Header';
 import Footer from './components/shared/Footer/Footer';
 import './App.css'; // importing css  
 import Home from './components/Home/Home';
+import HocDemo from './components/HocDemo/HocDemo';
+import About from './components/About/About';
+import Support from './components/Support/Support';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // ideal place for us to have the layout 
 function App() {
 
   // every comp should return JSX 
   return (
-    <div>
+    <BrowserRouter>
       <Header></Header>
 
       <main className='mt-5'>
-        <Home />
+        {/* Config the URL's with the matching comp */}
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/hoc-demo" element={<HocDemo/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/support" element={<Support/>} />
+        </Routes>
       </main>
       
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
