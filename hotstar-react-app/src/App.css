@@ -1,1 +1,4 @@
 /* accessible to all the descendants */
+.hocStyle{
+  color: red;
+}

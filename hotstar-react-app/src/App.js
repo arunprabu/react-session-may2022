@@ -14,6 +14,7 @@ import HocDemo from './components/HocDemo/HocDemo';
 import About from './components/About/About';
 import Support from './components/Support/Support';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ErrorBoundary from './containers/ErrorBoundary';
 
 // ideal place for us to have the layout 
 function App() {
@@ -32,7 +33,7 @@ function App() {
           <Route path="/support" element={<Support/>} />
         </Routes>
       </main>
-      
+    
       <Footer />
     </BrowserRouter>
   );
