@@ -9,13 +9,16 @@ const Menu = () => {
     { id: 2, name: 'HOC-Demo', url: '/hoc-demo'},
     { id: 3, name: 'About', url: '/about'},
     { id: 4, name: 'Support', url: '/support'},
+    { id: 5, name: 'Unit Testing Demo', url: '/unit-testing'},
   ]
 
   return(
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
       {
         primaryMenus.map( (menu) => {
-          return(<MenuItem url={menu.url} name={menu.name} key={menu.id}/>)
+          return(<MenuItem url={menu.url} 
+            name={menu.name} 
+            key={menu.id}/>)
         })
       }
     </ul>

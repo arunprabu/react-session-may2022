@@ -200,46 +200,6 @@ Cross Component Communication
 
 ----
 
-Topics
----
-  
-  Page Not Found - 404 [TODO]
-  Page Title using react helmet [TODO]
-  Routing with React-router-dom v6 [DONE]
-  
-  HOC  [DONE]
-  ErrorBoundary [DONE]
-
-  React Without ES6 [DONE]
-  React Without JSX [DONE]
-
-  Typechecking With PropTypes
-
-  Unit Testing React  - Jest/ Enzyme
-
-  Forms 
-    Refs and DOM 
-    Uncontrolled Components
-  AJAX -- REST API Call
-
-
-  Context API 
-
-  React Hooks 
-
-  Code-Splitting (React Suspense + React Lazy)
-  
-  SASS Integration 
-
-
-
-
-  Redux
-
-
-
-
----
 
 Routing in React 
 ---
@@ -303,4 +263,77 @@ standard RECOMMENDED practices
     * PascalCase 
 
   
+---
+
+
+Automated Testing 
+--
+  0. Static Type Checking 
+      Tools: TypeScript, FlowJS, PropTypes 
+
+  1. Unit Testing 
+      Testing tiny independent unit of a component 
+      Tools: JEST, React Testing Library
+
+      Prereq: ReactJS
+
+  2. Integration Testing 
+      Testing the comp with service and many components integrated together 
+      Tools: JEST, React Testing Library
+
+  3. End 2 End Testing (E2E)
+      Testing the whole app. 
+      Tools: CypressJS, Protractor, Selenium
+
+Approach
+--
+  1. Test Driven Development (TDD)
+      * TDD is focused on testing smaller pieces of functionality in isolation
+      Example: JEST 
+
+  2. Behaviour Driven Development (BDD)
+      * BDD is designed to test an application's behavior from the end user's standpoint
+      Example: Jasmine JS 
+
+  Write Test cases (in JS) => Dev => (Tools) => Instant Feedback of Success => [Code Complete] => qa => Deployment 
+
+  Tools: JEST, React Testing Library 
+
+
+Testing Pattern: AAA 
+---
+  Arrange Act Assert 
+  
+---
+
+Topics
+---
+  
+  Page Not Found - 404 [TODO]
+  Page Title using react helmet [TODO]
+  
+
+  Unit Testing React  - Jest & React Testing Library 
+
+  Forms 
+    Refs and DOM 
+    Uncontrolled Components
+  AJAX -- REST API Call
+
+  Context API 
+
+  React Hooks 
+
+  Code-Splitting (React Suspense + React Lazy)
+  
+  SASS Integration 
+
+
+
+
+  Redux
+
+
+
+
 ---

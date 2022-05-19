@@ -14,7 +14,7 @@ import HocDemo from './components/HocDemo/HocDemo';
 import About from './components/About/About';
 import Support from './components/Support/Support';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ErrorBoundary from './containers/ErrorBoundary';
+import UnitTestingDemo from './components/UnitTestingDemo/UnitTestingDemo';
 
 // ideal place for us to have the layout 
 function App() {
@@ -24,13 +24,15 @@ function App() {
     <BrowserRouter>
       <Header></Header>
 
-      <main className='mt-5'>
+      <main className='mt-5 pt-4 container'>
+        <p>Welcome to React JS</p>
         {/* Config the URL's with the matching comp */}
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/hoc-demo" element={<HocDemo/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/support" element={<Support/>} />
+          <Route path="/unit-testing" element={<UnitTestingDemo/>} />
         </Routes>
       </main>
     
