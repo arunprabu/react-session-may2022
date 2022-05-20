@@ -7,7 +7,7 @@ const Menu = () => {
   const primaryMenus = [
     { id: 1, name: 'Home', url: '/'},
     { id: 2, name: 'HOC-Demo', url: '/hoc-demo'},
-    { id: 3, name: 'About', url: '/about'},
+    { id: 3, name: 'About Hooks', url: '/about'},
     { id: 4, name: 'Support', url: '/support'},
     { id: 5, name: 'Unit Testing Demo', url: '/unit-testing'},
   ]

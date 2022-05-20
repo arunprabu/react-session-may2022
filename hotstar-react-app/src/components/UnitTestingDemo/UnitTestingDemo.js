@@ -5,7 +5,7 @@ const UnitTestingDemo = () => {
   return (
     <div>
       <h1>Unit Testing Demo</h1>
-      <Company />
+      <Company/>
     </div>
   )
 }

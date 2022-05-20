@@ -1,11 +1,14 @@
 import React from 'react'
 
-const Company = () => {
+const Company = (props) => {
   return (
     <div>
       <p data-testid="heading2">
-        Welcome to My Company
+        Welcome to My Company!
       </p>
+
+      <p data-testid="companyNameEl">
+        {props.name}</p>
     </div>
   )
 }
