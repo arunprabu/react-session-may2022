@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Blog from './Blog'
 import MyAccount from './MyAccount'
+import Todos from './Todos'
 
 const About = () => {
 
@@ -13,6 +14,10 @@ const About = () => {
       <hr/>
       <h2>useEffect() Hook Demo</h2>
       <Blog />
+
+      <hr/>
+      <h2>useReducer() and useRef() Demo</h2>
+      <Todos/>
 
     </div>
   )

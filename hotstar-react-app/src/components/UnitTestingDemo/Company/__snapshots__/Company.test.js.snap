@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Company should have right company comp snapshot 1`] = `
+<div>
+  <p
+    data-testid="heading2"
+  >
+    Welcome to My Company!!!
+  </p>
+  <p
+    data-testid="companyNameEl"
+  >
+    Cognizant Pvt Ltd
+  </p>
+  <input
+    data-testid="companyNameInput"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;
