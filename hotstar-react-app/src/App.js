@@ -15,9 +15,34 @@ import About from './components/About/About';
 import Support from './components/Support/Support';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UnitTestingDemo from './components/UnitTestingDemo/UnitTestingDemo';
+import Login from './components/Auth/Login';
+import useToken from './hooks/useToken';
+
+// function setToken(userToken) {
+//   sessionStorage.setItem('token', userToken);
+// }
+
+// function getToken() {
+//   const tokenString = sessionStorage.getItem('token');
+//   const userToken = JSON.parse(tokenString);
+//   if(userToken){
+//     return true
+//   }else{
+//     return false;
+//   } 
+// }
 
 // ideal place for us to have the layout 
 function App() {
+
+  // const { token, setToken } = useToken();
+
+  // if(!token) {
+    
+  //   return <Login setToken={setToken} />
+  // }
+
+  
 
   // every comp should return JSX 
   return (
@@ -33,6 +58,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/support" element={<Support/>} />
           <Route path="/unit-testing" element={<UnitTestingDemo/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
       </main>
     

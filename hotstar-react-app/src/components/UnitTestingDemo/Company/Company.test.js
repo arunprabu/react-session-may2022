@@ -51,7 +51,7 @@ describe('Company', () => {
     //assert 
     // finally check if the input is getting the updated data
     expect(companyNameInputEl.value).toBe('test123');
-  })
+  });
 
   // snapshot testing
   it('should have right company comp snapshot', () => {
