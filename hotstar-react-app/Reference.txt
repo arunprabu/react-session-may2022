@@ -342,10 +342,10 @@ Topics
   React Hooks (DONE)
 
 
-  Forms 
+  Forms [DONE]
     Refs and DOM 
     Uncontrolled Components
-  AJAX -- REST API Call
+  AJAX -- REST API Call [DONE]
 
   Context API 
 
@@ -355,12 +355,13 @@ Topics
   
   SASS Integration 
 
-
-
-
   Redux
 
 
 
 
 ---
+
+Firebase based auth in React Project
+Also Refer: [Important] https://firebase.google.com/docs/auth/web/start
+Refer: https://www.freecodecamp.org/news/react-firebase-authentication-and-crud-operations/

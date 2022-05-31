@@ -33,7 +33,7 @@ const Support = () => {
   return(   
     <Wrapper>
        <Heading3>
-        Demo of Styled Components -- Refer: https://styled-components.com/
+        Demo of Styled-Components -- Refer: https://styled-components.com/
       </Heading3>
       <Heading3>
         Do you need help? Contact Us

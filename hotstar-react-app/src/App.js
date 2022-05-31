@@ -18,6 +18,8 @@ import UnitTestingDemo from './components/UnitTestingDemo/UnitTestingDemo';
 import Login from './components/Auth/Login';
 import useToken from './hooks/useToken';
 
+import { getAuth } from "firebase/auth";
+
 // function setToken(userToken) {
 //   sessionStorage.setItem('token', userToken);
 // }
@@ -35,14 +37,12 @@ import useToken from './hooks/useToken';
 // ideal place for us to have the layout 
 function App() {
 
-  // const { token, setToken } = useToken();
-
-  // if(!token) {
-    
-  //   return <Login setToken={setToken} />
-  // }
-
-  
+  if(!sessionStorage.getItem('token')){
+    console.log('Not Logged In');
+    return(
+      <Login />
+    )
+  }
 
   // every comp should return JSX 
   return (
@@ -58,7 +58,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/support" element={<Support/>} />
           <Route path="/unit-testing" element={<UnitTestingDemo/>} />
-          <Route path="/login" element={<Login/>} />
+          {/* <Route path="/login" element={<Login/>} /> */}
         </Routes>
       </main>
     
